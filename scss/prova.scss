@@ -1,0 +1,21 @@
+@import 'nesting';
+
+@mixin border-radius($radius){
+	-webkit-border-radius : $radius;
+	-moz-border-radius    : $radius;
+	-ms-border-radius     : $radius;
+	border-radius         : $radius;
+}
+
+$font-stack: Helvetica, sans-serif;
+$primary-color: #333;
+
+.background{
+	background-color: 
+}
+
+body {
+	font: 100% $font-stack;
+	color: $primary-color;
+	@include border-radius(10px);
+}
